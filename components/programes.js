@@ -22,7 +22,11 @@ const Programes = () => {
 	} else {
 		spaceX = data.map((item, index) => {
 			{
-				/*src={item?.links.mission_patch_small}*/
+				/*
+				not loading image so used static image.
+				src={item?.links.mission_patch_small}
+				src="https://via.placeholder.com/300"
+				*/
 			}
 			// console.log(item);
 			const missionIds =
@@ -37,7 +41,7 @@ const Programes = () => {
 						<div className="p-2 bg-secondary">
 							<img
 								style={{ width: "80%" }}
-								src="https://via.placeholder.com/300"
+								src={item?.links.mission_patch_small}
 								className="mx-auto d-block"
 								alt={item?.mission_name}
 							/>
